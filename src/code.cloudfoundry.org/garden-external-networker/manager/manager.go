@@ -163,7 +163,7 @@ func (m *Manager) Up(containerHandle string, inputs UpInputs) (*UpOutputs, error
 	outputs.SearchDomains = m.SearchDomains
 
 	if containerIPv6 != nil {
-		outputs.Properties.ContainerIP = containerIPv6.Address.IP.String()
+		outputs.Properties.ContainerIPv6 = containerIPv6.Address.IP.String()
 	}
 
 	return &outputs, nil
